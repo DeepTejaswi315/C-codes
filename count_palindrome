@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+	int n,count=0;
+	scanf("%d", &n);
+	int arr[n];
+	int i;
+	for(i=0; i<n; i++) 
+	{
+		scanf("%d", &arr[i]); 
+	int t=arr[i];
+	int rev=0,r;
+	while(arr[i]>0)
+	{
+		r=arr[i]%10;
+		rev=rev*10+r;
+		arr[i]=arr[i]/10;
+	}
+	    if(t==rev)
+	   {
+		count++;
+	   }
+    }
+    printf("%d",count);
+}

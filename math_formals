@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+//sqrt,pow,ceil,floor,abs,log10
+int main()
+{
+	int n=24;
+	float m=sqrt(n);
+	printf("%f\n",m);
+	
+	int a=10,b=3;
+	int x=pow(a,b);
+	printf("%d\n",x);
+	
+	//ceil-> rounds up the given point value to it's nearest int
+	float z=14.9;
+	printf("%d\n",(int)ceil(z));
+	
+	//floor-> rounds up the given point value to it's nearest int
+	printf("%d\n",(int)floor(z));
+	
+	//abs
+	printf("%d\n",abs(a-b));
+	
+	//log10
+	printf("%d\n",(int)log10(9)+1);
+
+}
